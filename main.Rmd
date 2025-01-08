@@ -120,7 +120,7 @@ legend(350, 50, c("empirical", "exponential model", "smoothed"), lty = c(1,1,2),
 vario.4 <- variog4(ca20, max.dist = 600, trend = ~altitude+region)
 plot(vario.4, lwd=2)
 ```
-# Variogramas com envelopes de Monte Carlo. O gráfico da esquerda faz envelopes baseados em permutações dos dados, isto é, nao faz supopsições de correlação espacial. O segundo gráfico é baseado em simulações dado um conjunto de parâmetros do modelo, no nosso caso, o modelo de máxima verossimilhança. Este envelope mostra a variabilidade do variograma impírico
+Variogramas com envelopes de Monte Carlo. O gráfico da esquerda faz envelopes baseados em permutações dos dados, isto é, nao faz suposições de correlação espacial. O segundo gráfico é baseado em simulações dado um conjunto de parâmetros do modelo, no nosso caso, o modelo de máxima verossimilhança. Este envelope mostra a variabilidade do variograma empírico
 
 ```{r}
 env.mc <- variog.mc.env(ca20, obj.var=bin1)
